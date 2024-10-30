@@ -16,3 +16,13 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine. You wi
 
    ```bash
    npm install
+
+## Available Scripts
+
+### 1. Navigate to the Frontend Directory
+
+To begin working on the frontend, navigate to the `portfolio-frontend` directory by running:
+
+```bash
+   cd portfolio-frontend
+
