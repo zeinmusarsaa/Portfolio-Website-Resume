@@ -25,4 +25,24 @@ To begin working on the frontend, navigate to the `portfolio-frontend` directory
 
 ```bash
    cd portfolio-frontend
+```
+### 2. Start the Development Server
+
+Once inside the portfolio-frontend directory, you can start the development server by running:
+
+```bash
+   npm start
+```
+
+### 3. View in Browser
+To continue building out our portfolio website:
+
+- Focus on expanding and refining the frontend.
+- Search for cool add-ons or features that can differentiate our portfolio from others.
+  
+Happy coding!
+
+
+
+
 
