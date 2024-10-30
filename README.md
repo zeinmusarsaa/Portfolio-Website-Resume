@@ -10,7 +10,7 @@ First, you need to ensure you have the npm dependincies installed, so in your te
 1) Go to the frontend directory through:
 ### cd portfolio-frontend
 
-2)you can run:
+2) you can run:
 
 ### `npm start`
 
