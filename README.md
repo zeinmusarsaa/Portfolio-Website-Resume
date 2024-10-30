@@ -1,24 +1,18 @@
-# This is for our portfolio, it is still under development
+# Portfolio Website
 
-## Getting Started with Modifying this application
+This is our portfolio website, which is still under development. Follow the instructions below to get started with modifying and running the application.
 
-First, you need to ensure you have the npm dependincies installed, so in your terminal while you're in the main file of Portfolio-Website, run:
-  npm install
+## Getting Started
 
-## Available Scripts
+### Prerequisites
 
-1) Go to the frontend directory through:
-### cd portfolio-frontend
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine. You will also need npm, which comes with Node.js.
 
-2) you can run:
+### Installation
 
-### `npm start`
+1. Clone the repository or download the project files.
+2. Open your terminal and navigate to the root directory of the project (`Portfolio-Website`).
+3. Run the following command to install all necessary npm dependencies:
 
-Runs the app in the development mode.\
-3) Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-4) The steps we need next is to continue to build out the frontend, and search for cool add-ons that differentiate our portfolio websites.
-
+   ```bash
+   npm install
