@@ -1,0 +1,64 @@
+.element {
+  background-color: #d4dfce;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.element .div {
+  background-color: #d4dfce;
+  height: 838px;
+  position: relative;
+  width: 1257px;
+}
+
+.element .frame {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 538px;
+  position: absolute;
+  top: 353px;
+  width: 181px;
+}
+
+.element .text-wrapper-2 {
+  align-self: stretch;
+  color: #72817e;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+}
+
+.element .button {
+  all: unset;
+  align-items: center;
+  background-color: #d4dfce;
+  border: 2px solid;
+  border-color: #72817e;
+  box-sizing: border-box;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 564px;
+  padding: 16px 18px;
+  position: absolute;
+  top: 672px;
+}
+
+.element .sign-up {
+  color: #72817e;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-top: -2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

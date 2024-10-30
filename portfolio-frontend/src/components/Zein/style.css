@@ -1,0 +1,18 @@
+.zein {
+  height: 66px;
+  position: relative;
+  width: 130px;
+}
+
+.zein .text-wrapper {
+  color: #72817e;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 55px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+  width: 130px;
+}
