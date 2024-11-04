@@ -1,19 +1,10 @@
-/* .landing {
-  background-color: #d4dfce;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.aurora21 {
   width: 100%;
-  height: 100%;
+  position: relative;
+  background-color: #f9f9f9;
+  height: 417px;
 }
 
-.landing-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-} */
-
-/* Add more styles as needed */
+.backgroundColor {
+  background-color: #cdd7c7;
+}

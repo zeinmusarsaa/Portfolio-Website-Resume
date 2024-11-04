@@ -1,7 +1,10 @@
 // src/components/Zein/Layout/ChromeLayout.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useWindowState } from "../../../context/WindowContext";
+import { useWindowState } from "../../context/WindowContext";
+import Footer from "../Footer/Footer";
+import NavBar from "../Navigation/NavBar";
+import "./ChromeLayout.css";
 
 const ChromeLayout = ({ children }) => {
   const navigate = useNavigate();
@@ -33,13 +36,21 @@ const ChromeLayout = ({ children }) => {
               onClick={() => handleControls("close")}
             ></button>
             <button
+              className="yellow"
+              onClick={() => handleControls("minimize")}
+            ></button>
+            <button
               className="green"
               onClick={() => handleControls("maximize")}
             ></button>
           </div>
           <div className="chrome-title">Google Chrome</div>
         </div>
-        <div className="chrome-body">{children}</div>
+        <div className="chrome-body">
+          <NavBar />
+          <div className="content">{children}</div>
+          <Footer />
+        </div>
       </div>
     </div>
   );

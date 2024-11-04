@@ -48,3 +48,18 @@ body {
   transform: none;
   border-radius: 0;
 }
+
+/* In your ChromeLayout.css */
+.chrome-body {
+  height: calc(100% - 40px);
+  overflow-y: auto;
+  background-color: #d4dfce;
+  position: relative;
+  padding-top: 60px; /* For navbar */
+  margin-bottom: 88px; /* Space for footer */
+}
+
+.content {
+  min-height: calc(100% - 148px); /* Subtract navbar and footer height */
+  padding-bottom: 88px; /* Add padding to prevent content from being hidden behind footer */
+}

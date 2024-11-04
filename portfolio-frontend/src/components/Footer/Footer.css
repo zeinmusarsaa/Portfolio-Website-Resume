@@ -1,0 +1,36 @@
+/* src/components/Footer/Footer.css */
+.instanceChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #7c8a70;
+}
+
+.aurorabricksIncAll {
+  position: absolute;
+  height: 13.07%;
+  width: 24.3%;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  display: inline-block;
+  color: #fff;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+}
+
+.rectangleParent {
+  width: 100%;
+  position: fixed; /* Change to fixed */
+  bottom: 0; /* Stick to bottom */
+  height: 88px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Public Sans";
+  z-index: 1000; /* Ensure it stays on top */
+}
