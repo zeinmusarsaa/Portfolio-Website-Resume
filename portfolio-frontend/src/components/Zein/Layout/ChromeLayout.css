@@ -1,0 +1,50 @@
+/* Add this to your global.css or ChromeLayout.css */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.desktop-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://media.idownloadblog.com/wp-content/uploads/2016/01/OS-X-Yosemite-Finder-desktop-icons-Mac-screenshot-002.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chrome-window {
+  background-color: white;
+  width: 50vw;
+  height: 80vh;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.chrome-window.minimized {
+  transform: translate(-50%, calc(100vh - 40px));
+  height: 40px;
+  width: 200px;
+}
+
+.chrome-window.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: none;
+  border-radius: 0;
+}

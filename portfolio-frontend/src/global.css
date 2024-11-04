@@ -1,19 +1,220 @@
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:400|Source+Code+Pro:600");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0px;
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
   height: 100%;
+  font-family: Arial, sans-serif;
 }
-/* a blue color as a generic focus style */
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
+
+/* Mac desktop-like background */
+/* Desktop screen styles */
+/* Desktop screen styles */
+.desktop-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://media.idownloadblog.com/wp-content/uploads/2016/01/OS-X-Yosemite-Finder-desktop-icons-Mac-screenshot-002.jpg");
+  background-size: cover;
+  padding: 10px;
 }
-a {
-  text-decoration: none;
+
+/* Terminal Window Styles */
+.terminal-window {
+  background-color: #000000;
+  color: #dcdcdc;
+  font-family: Consolas, "Courier New", monospace;
+  width: 600px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Chrome Window Styles */
+.chrome-window {
+  background-color: white;
+  width: 50vw; /* Half the viewport width */
+  height: 80vh; /* 80% of viewport height */
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+/* Headers for both windows */
+.terminal-header,
+.chrome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  padding: 10px;
+  color: white;
+}
+
+/* Window controls */
+.mac-controls {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+.mac-controls button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; /* Make buttons circular */
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 150ms ease; /* Smooth transition for hover effects */
+  opacity: 0.8; /* Slightly dimmed by default */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+}
+
+/* Hover states */
+.mac-controls button:hover {
+  opacity: 1;
+}
+
+.mac-controls .red {
+  background-color: #ff5f56;
+}
+
+.mac-controls .red:hover {
+  background-color: #ff3b30;
+}
+
+.mac-controls .yellow {
+  background-color: #ffbd2e;
+}
+
+.mac-controls .yellow:hover {
+  background-color: #ffcc00;
+}
+
+.mac-controls .green {
+  background-color: #27c93f;
+}
+
+.mac-controls .green:hover {
+  background-color: #28cd41;
+}
+
+/* When window is not focused */
+.window:not(:focus) .mac-controls button {
+  opacity: 0.5;
+  background-color: #dcdcdc;
+}
+/* Content areas */
+.terminal-body {
+  padding: 15px;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+.chrome-body {
+  height: calc(100% - 40px);
+  overflow-y: auto;
+  background-color: #d4dfce;
+}
+
+/* Terminal text */
+.terminal-line {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Keep your existing Element styles */
+.element {
+  background-color: #d4dfce;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Keep the rest of your Element-specific styles */
+
+/* Keep the rest of your Element-specific styles */
+
+.element .div {
+  background-color: #d4dfce;
+  height: 838px;
+  position: relative;
+  width: 1257px;
+}
+
+.element .frame {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 538px;
+  position: absolute;
+  top: 353px;
+  width: 181px;
+}
+
+.element .text-wrapper-2 {
+  align-self: stretch;
+  color: #72817e;
+  font-family: "Bebas Neue", Helvetica;
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+}
+
+.element .button {
+  all: unset;
+  align-items: center;
+  background-color: #d4dfce;
+  border: 2px solid;
+  border-color: #72817e;
+  box-sizing: border-box;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 564px;
+  padding: 16px 18px;
+  position: absolute;
+  top: 672px;
+}
+
+.element .sign-up {
+  color: #72817e;
+  font-family: "Source Code Pro", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-top: -2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.chrome-window.minimized {
+  transform: translate(-50%, 100vh); /* Move window below viewport */
+  height: 40px; /* Only show the header */
+  overflow: hidden;
+}
+
+/* Fullscreen state */
+.chrome-window.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: none;
+  border-radius: 0;
 }
