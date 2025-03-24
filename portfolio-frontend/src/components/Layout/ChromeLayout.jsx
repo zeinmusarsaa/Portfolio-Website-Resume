@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useWindowState } from "../../context/WindowContext";
-import Footer from "../Footer/Footer";
 import NavBar from "../Navigation/NavBar";
 import "./ChromeLayout.css";
 
@@ -27,8 +26,8 @@ const ChromeLayout = ({ children }) => {
   };
 
   useEffect(() => {
-    updateWindowSize("normal");
-    return () => updateWindowSize("minimized");
+    updateWindowSize("fullscreen");
+    return () => updateWindowSize("normal");
   }, [updateWindowSize]);
 
   return (
@@ -57,7 +56,6 @@ const ChromeLayout = ({ children }) => {
         <div className="chrome-body">
           <NavBar />
           <main className="content-wrapper">{children}</main>
-          <Footer />
         </div>
       </div>
     </div>

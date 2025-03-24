@@ -37,20 +37,6 @@ const Landing = () => {
             </div>
           </section>
         </main>
-
-        <footer className="page-footer">
-          <div className="footer-content">
-            <p>© 2025 ZM | Professional Portfolio</p>
-            <div className="footer-links">
-              <button onClick={() => navigate("/privacy")}>
-                Privacy Policy
-              </button>
-              <button onClick={() => navigate("/terms")}>
-                Terms of Service
-              </button>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
   );

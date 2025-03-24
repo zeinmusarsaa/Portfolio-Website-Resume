@@ -1,13 +1,17 @@
-// src/components/Footer/Footer.jsx
 import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="rectangleParent">
-      <div className="instanceChild" />
-      <div className="aurorabricksIncAll">{`© 2024 <Z/M>`}</div>
-    </div>
+    <footer className="page-footer">
+      <div className="footer-content">
+        <p>© 2025 Zein Mosarsaa</p>
+        <div className="footer-links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
   );
 };
 

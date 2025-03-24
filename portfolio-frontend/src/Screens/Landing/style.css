@@ -1,5 +1,4 @@
-/* Landing Page Specific Styles */
-.landing-page {
+Landing Page Specific Styles .landing-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -53,29 +52,4 @@
 
 .get-started:hover {
   background: #0077ed;
-}
-
-.page-footer {
-  background: #1d1d1f;
-  color: #ffffff;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 2rem;
-  opacity: 0.8;
-}
-
-.footer-links a:hover {
-  opacity: 1;
-}
-
-.hero-section {
-  position: relative;
-  z-index: 0;
 }
