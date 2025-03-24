@@ -25,18 +25,19 @@ const NavBar = () => {
       <div className="nav-logo" onClick={() => navigate("/")}>
         <span>{`<Z/M>`}</span>
       </div>
+
       <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+        <button className="nav-link" onClick={() => navigate("/landing")}>
+          Home
+        </button>
         <button className="nav-link" onClick={() => navigate("/projects")}>
           Projects
-        </button>
-        <button className="nav-link" onClick={() => navigate("/additional")}>
-          Additional
         </button>
         <button className="nav-link" onClick={() => navigate("/DigitalResume")}>
           Digital Resume
         </button>
-        <button className="nav-link" onClick={() => navigate("/landing")}>
-          Home
+        <button className="nav-link" onClick={() => navigate("/additional")}>
+          Additional
         </button>
         <button className="download-button" onClick={handleDownloadResume}>
           Resume
