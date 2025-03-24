@@ -9,32 +9,32 @@ const Element = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate("/landing"); // Navigate to the desktop screen with PowerShell animation
+    navigate("/landing", { state: { inChromeWindow: true } });
   };
 
   return (
     <div className="element">
-      <div className="div">
-        <div className="frame">
+      <div className="content-wrapper">
+        <div className="name-animation">
           <Zein />
           <motion.div
-            className="text-wrapper-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
+            className="last-name"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
           >
             Mosarsaa
           </motion.div>
         </div>
 
         <motion.div
-          className="text-wrapper-2"
+          className="button-wrapper"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.6 }}
         >
-          <button className="button" onClick={handleButtonClick}>
-            <div className="sign-up">Get Started</div>
+          <button className="get-started-button" onClick={handleButtonClick}>
+            Get Started
           </button>
         </motion.div>
       </div>
@@ -42,4 +42,4 @@ const Element = () => {
   );
 };
 
-export default Element; // Use default export here
+export default Element;
