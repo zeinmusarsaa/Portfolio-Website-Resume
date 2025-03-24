@@ -35,8 +35,8 @@ const NavBar = () => {
         <button className="nav-link" onClick={() => navigate("/DigitalResume")}>
           Digital Resume
         </button>
-        <button className="nav-link" onClick={() => navigate("/PrivacyPolicy")}>
-          Privacy Policy
+        <button className="nav-link" onClick={() => navigate("/landing")}>
+          Home
         </button>
         <button className="download-button" onClick={handleDownloadResume}>
           Resume
